@@ -1,0 +1,97 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --color-primary: #66cc33;
+    --color-white: #FFF;
+    --color-dark: rgba(0, 0, 0, 0.7);
+    --height-navbar: 52px;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.v-under {
+    vertical-align: bottom; /* Căn chỉnh chữ ở dưới */
+}
+
+.sale-off {
+    position: relative;
+}
+
+.border-line {
+    flex: 1;
+    height: 2px;
+    background-color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.more-sell {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    position: absolute;
+    right: 8%;
+    top: 32%;
+    width: 40%;
+}
+
+.more-sell h2 {
+    margin: 20px 0 32px 0;
+    color: var(--color-primary);
+    padding-bottom: 8px;
+    font-weight: 500;
+    border-bottom: 4px solid var(--color-primary);
+}
+
+.more-sell p {
+    margin: 24px 0;
+}
+.my-button {
+    margin: 24px 0;
+    padding: 12px 20px;
+    border: 1px solid var(--color-primary);
+    background-color: #030403;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.product-item {
+    text-align: center;
+    padding: 2px;
+}
+.product-item p {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.product-item h2 {
+    font-size: 28px;
+}
+
+.product-item .btn-p-more {
+    width: 40px;
+    height: 5px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 999px;
+    margin-bottom: 12px;
+    transition: all 0.3s linear;
+}
+
+.product-item .btn-p-more:hover {
+    width: 50%;
+}
+
+.product-item .product-price {
+    color: #aaa;
+    font-size: 14px;
+}

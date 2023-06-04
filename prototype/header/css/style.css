@@ -1,0 +1,189 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --color-primary: #66cc33;
+    --color-white: #FFF;
+    --color-dark: rgba(0, 0, 0, 0.7);
+    --height-navbar: 52px;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+
+.under-line {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    border-bottom: 1px solid var(--color-white);
+    position: relative;
+}
+
+.under-line::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--color-white);
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+
+.logo-sologain {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.menu {
+    background-color: var(--color-dark) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    right: 0;
+}
+.my-link{
+    color: var(--color-white);
+}
+
+.navbar {
+    height: var(--height-navbar);
+}
+.navbar-nav .my-link.active {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+
+.my-link:hover {
+    color: var(--color-primary);
+}
+
+.my-link.active::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    width: 80%;
+    bottom: 0px;
+    border-radius: 999px;
+    left: 10%;
+}
+
+.my-phone {
+    letter-spacing: 2px;
+}
+.my-button {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.my-button:hover {
+    color: var(--color-primary);
+}
+
+.menu-dealer {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 1px 0px 4px var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+    padding: 12px;
+}
+
+.dealer-item {
+    border-left: 1px solid var(--color-primary);
+}
+.dealer-header p {
+    letter-spacing: 1px;
+}
+
+.dealer-item p{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.dealer-item i {
+    color: var(--color-primary);
+}
+
+.dealer-item h6 {
+    padding: 12px 0;
+    margin: 12px 0;
+}
+
+.dealer-footer h6 {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+.carousel-inner{
+}
+
+.carousel-item img{
+    height: calc(100vh);
+    display: block;
+}
+.carousel-control-next{
+    justify-content: end !important;
+    padding: 8px;
+}
+
+.carousel-control-prev {
+    justify-content: start;
+    padding: 8px;
+}
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    color: #fff;
+    width: 30%;
+    padding-left: 48px;
+    text-align: left;
+}
+
+.carousel-item .carousel-caption img{
+    display: block;
+    width: 224px;
+    height: 70px;
+}
+
+.carousel-item .carousel-caption img:nth-child(1){
+    display: block;
+    width: 300px;
+    height: 60px;
+}
+
+
+
+
+.carousel-caption p, .carousel-caption h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.carousel-caption h3 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.carousel-caption .btn-more {
+    border: 1px solid var(--color-primary);
+    border-radius: 0;
+    padding: 12px 24px;
+    color: var(--color-white);
+}

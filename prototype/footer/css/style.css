@@ -1,0 +1,21 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --color-primary: #66cc33;
+    --color-white: #FFF;
+    --color-dark: rgba(0, 0, 0, 0.7);
+    --height-navbar: 52px;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
