@@ -1,0 +1,229 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --color-primary: #66cc33;
+    --color-white: #FFF;
+    --color-dark: rgba(0, 0, 0, 0.7);
+    --height-navbar: 52px;
+    --color-light: #6C7293;
+    --bg-primary:#191c24;
+    --bg-dark: #0f1015;
+
+}
+
+.content-user {
+    background-color: var(--bg-dark)
+}
+
+.form-search {
+    background-color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 4px;
+}
+
+label {
+    color: var(--color-white);
+}
+
+.form-group input, .form-group select {
+    background-color: var(--bg-dark);
+    color: var(--color-light);
+    border: none;
+}
+
+.form-group button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.form-group {
+    width: 25%;
+    padding: 0 12px;
+    margin-bottom: 12px;
+   
+
+}
+
+.box-table {
+    background-color: var(--bg-primary);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.my-table {
+    width: 100%;
+}
+
+.my-table tr {
+    transition: all 0.3s linear;
+}
+.my-table tr:hover td {
+    cursor: pointer;
+    color: var(--color-primary) !important;
+}
+.my-table tr.active td {
+    color: var(--color-primary) !important;
+}
+
+.my-table th {
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+}
+.my-table td, th {
+    padding: 12px;
+    border: 2px solid var(--bg-dark);
+}
+
+.my-table tr:nth-child(odd) td{
+    background-color: var(--bg-primary);
+    color: var(--color-light);
+    
+}
+
+.my-table tr:nth-child(even) td {
+    background-color: var(--bg-dark);
+    color: var(--color-light);
+
+}
+
+.my-page {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 12px;
+    background-color: var(--bg-primary);
+}
+
+.my-pagination {
+    display: flex;
+}
+
+.my-page-item {
+    padding: 6px 12px;
+    background-color: var(--bg-dark);
+    margin-right: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.my-page-link {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+.my-page-item.disabled {
+    opacity: 0.3;
+}
+
+.my-page-item.active a {
+    color: var(--color-primary);
+} 
+
+.user {
+    margin-top: 24px;
+    padding: 12px;
+    background-color: var(--bg-primary);
+}
+
+.user-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-avatar img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-info p{
+    color: var(--color-light);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info p span {
+    display: inline-block;
+    text-align: left;
+    flex: 1;
+}
+
+.user-info a {
+    color: var(--color-primary);
+}
+.user-info h3 {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+    font-size: 20px;
+}
+
+.user-info i {
+    margin: 0 8px;
+}
+
+.user-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user-info .edit-note {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.action-multiable {
+    padding: 12px 0;
+}
+.action-multiable button {
+    margin-right: 12px;
+}
+
+
+.my-go {
+    color: var(--color-light);
+    display: flex;
+    align-items: center;
+}
+.my-go input {
+    font-weight: 600;
+    background: var(--bg-dark);
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 40px;
+    color: var(--color-primary);
+}
+
+
+.my-go .go-go {
+
+}
+.my-go .go-total {
+    margin-right: 24px;
+}
+
+.my-go .go-rows {
+    background-color: var(--bg-dark);
+    color: var(--color-primary);
+    margin-right: 24px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 3px;
+}

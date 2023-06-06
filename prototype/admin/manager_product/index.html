@@ -74,25 +74,25 @@
               <div class="box-icon">
                 <i class="fa-solid fa-users"></i>
               </div>
-              <a class="side-link" href="">Quản Lý NHÂN VIÊN</a>
+              <a class="side-link" href="">NHÂN VIÊN</a>
             </li>
             <li class="side-item">
               <div class="box-icon">
                 <i class="fa-solid fa-motorcycle"></i>
               </div>
-              <a class="side-link" href="">Quản Lý Xe</a>
+              <a class="side-link" href="">Xe</a>
             </li>
             <li class="side-item">
               <div class="box-icon">
                 <i class="fa-solid fa-chart-simple"></i>
               </div>
-              <a class="side-link" href="">Quản Lý Giao dịch</a>
+              <a class="side-link" href="">Giao dịch</a>
             </li>
             <li class="side-item">
               <div class="box-icon">
                 <i class="fa-solid fa-shop"></i>
               </div>
-              <a class="side-link" href="">Quản lý đại lý</a>
+              <a class="side-link" href="">đại lý</a>
             </li>
             <li class="side-item">
               <div class="box-icon">
@@ -101,94 +101,119 @@
               <a class="side-link" href="">Pages</a>
             </li>
           </ul>
+          <div class="box-message-new">
+            <div class="message-new">
+              <p class="message-title"><i class="fa-solid fa-user-tie"></i></p>
+              <p class="message-content">vừa gửi cho bạn ...</p>
+            </div>
+          </div>
           <div class="canadar">
-            <p class="time">17 : 20 : 34</p>
-            <p class="date">12 - JUN - 2023</p>
+            <p class="time" id="current-time"></p>
+
+            <p id="current-day" class="date"></p>
           </div>
         </div>
         <div class="side-content col-10">
-          <div class="row box-total">
-            <div class="col-3 p-3">
-              <div class="total-item w-100">
-                <p class="icon me-auto">
-                  <i class="fa-solid fa-motorcycle fa-2xl"></i>
-                </p>
-                <div class="total-detail">
-                  <p class="title">Tổng Số Xe</p>
-                  <p class="total">154</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-3 p-3">
-              <div class="total-item w-100">
-                <p class="icon me-auto">
-                  <i class="fa-solid fa-user-check fa-2xl"></i>
-                </p>
-                <div class="total-detail">
-                  <p class="title d-flex justify-content-between">
-                    <span class="me-2" style="border-right: 1px solid var(--color-primary); display: inline-block; padding-right: 8px;">Khách Hàng Tháng 8</span>
-                    <span>Nhân Viên</span>
+          <div class="container-fluid">
+            <div class="row box-total">
+              <div class="col-3 p-3">
+                <div class="total-item w-100">
+                  <p class="icon me-auto">
+                    <i class="fa-solid fa-person-biking fa-lg"></i>
                   </p>
-                  <p class="total">62 | 50</p>
+                  <div class="total-detail">
+                    <p class="title">Lượt Truy Cập</p>
+                    <p class="total color-primary">1.540.000</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 p-3">
+                <div class="total-item w-100">
+                  <p class="icon me-auto">
+                    <i class="fa-solid fa-user-check fa-lg"></i>
+                  </p>
+                  <div class="total-detail">
+                    <p class="title d-flex justify-content-between">
+                      <span>Khách Hàng / Tháng</span>
+                    </p>
+                    <p class="total color-primary">62</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 p-3">
+                <div class="total-item w-100">
+                  <p class="icon me-auto">
+                    <i class="fa-solid fa-chart-line fa-lg"></i>
+                  </p>
+                  <div class="total-detail">
+                    <p class="title">Giao Dịch</p>
+                    <p class="total color-primary">154 | $ 200.000</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-2 p-3">
+                <div class="total-item w-100">
+                  <p class="icon me-auto">
+                    <i class="fa-solid fa-shop fa-lg"></i>
+                  </p>
+                  <div class="total-detail">
+                    <p class="title">Đại Lý</p>
+                    <p class="total color-primary">5</p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="col-3 p-3">
-              <div class="total-item w-100">
-                <p class="icon me-auto">
-                  <i class="fa-solid fa-chart-line fa-2xl"></i>
-                </p>
-                <div class="total-detail">
-                  <p class="title">Tổng Số Giao Dịch Trong Tháng 8</p>
-                  <p class="total">154 | $ 200.000</p>
+            <div class="row" style="padding-right: 14px">
+              <div class="col-8">
+                <div class="chart w-100">
+                  <canvas id="myChart"></canvas>
                 </div>
               </div>
-            </div>
+              <div class="col-4 top-dl">
+                <div class="todos">
+                  <h3 class="todo-heading">Việc Cần Làm</h3>
+                  <div class="todo-add d-flex">
+                    <input class="todo-text w-100" type="text" />
+                    <button class="todo-btn-add btn btn-outline-success btn-sm">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <ul class="todo-list">
+                    <li class="todo-item">
+                      <span class="todo-time">23 Jun 2023 17:20:00</span>
+                      <p class="todo-content">To do something...</p>
+                      <button class="todo-btn-action">
+                        <i class="fa-solid fa-check"></i>
+                      </button>
+                    </li>
 
-            <div class="col-3 p-3">
-              <div class="total-item w-100">
-                <p class="icon me-auto">
-                  <i class="fa-solid fa-shop fa-2xl"></i>
-                </p>
-                <div class="total-detail">
-                  <p class="title">Tổng Số Đại Lý</p>
-                  <p class="total">5</p>
+                    <li class="todo-item checked">
+                      <span class="todo-time">23 Jun 2023 17:20:00</span>
+                      <p class="todo-content">To do something...</p>
+                      <button class="todo-btn-action">
+                        <i class="fa-solid fa-x"></i>
+                      </button>
+                    </li>
+                    <li class="todo-item">
+                      <span class="todo-time">23 Jun 2023 17:20:00</span>
+                      <p class="todo-content">To do something...</p>
+                      <button class="todo-btn-action">
+                        <i class="fa-solid fa-check"></i>
+                      </button>
+                    </li>
+                    <li class="todo-item checked">
+                      <span class="todo-time">23 Jun 2023 17:20:00</span>
+                      <p class="todo-content">To do something...</p>
+                      <button class="todo-btn-action">
+                        <i class="fa-solid fa-x"></i>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-
-          </div>
-
-          <div class="row">
-            <div class="col-9 p-3">
-              <div class="chart w-100">
-                <div class="col-shops">
-                  
-
-                    <div class="shop-item me-2">
-
-                    </div>
-
-                    <div class="shop-item me-2">
-                        
-                    </div>
-                    <div class="shop-item me-2">
-                        
-                    </div>
-                    <div class="shop-item me-2">
-                        
-                    </div>
-                    <div class="shop-item me-2">
-                        
-                    </div>
-                    <p class="w-100 month">Tháng 1</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              top
             </div>
           </div>
         </div>
@@ -200,5 +225,12 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"
+      integrity="sha512-zO8oeHCxetPn1Hd9PdDleg5Tw1bAaP0YmNvPY8CwcRyUk7d7/+nyElmFrB6f7vg4f7Fv4sui1mcep8RIEShczg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
